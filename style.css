@@ -1,0 +1,48 @@
+.hero-section{
+    background-image: url('./imgs/pexels-binyamin-mellish-106399.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 56px);
+    position: relative;
+}
+
+.hero-section::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .hero-text{
+    position: relative;
+    z-index: 100;
+    gap: 20px;
+}
+
+.hero-section .form-section{
+    z-index: 100;
+    background-color: rgba(0, 28, 56, 0.6);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.hero-section .form-section .form-group{
+    gap: 50px;
+}
+
+.hero-section .form-section .button{
+    width: 60px;
+    height: 45px;
+    background-color: #FD8E5E;
+}
+
+.hero-section .form-group input{
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 1px rgba(250, 250, 250, 0.6);
+    opacity: 50%;
+    color: #000;
+}
